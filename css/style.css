@@ -92,6 +92,7 @@ ul li a{
 }
 .active_a{
 	background: #dc0000;
+	color: #fff;
 	opacity: 0.9;
 
 }
