@@ -3,9 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width" /> 
-	<meta name="viewport" content="initial-scale=1, maximum-scale=1"> 
-	<meta name="viewport" content="width=1170, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 	<title>Zadanie24</title>
 	
 	<link rel="stylesheet" href="css/normalize.css">
@@ -91,7 +89,6 @@
 				<img src="img/images/latest_img1.jpg" alt="">
 				<figcaption>
 					<h3>Men</h3>
-					<p>Lorem ipsum dolor sit amet.</p>
 					<a href="#"></a>
 				</figcaption>
 			</figure>
@@ -99,7 +96,6 @@
 				<img src="img/images/latest_img2.jpg" alt="">
 				<figcaption>
 					<h3>Woman</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					<a href="#"></a>
 				</figcaption>
 			</figure>
@@ -107,7 +103,6 @@
 				<img src="img/images/latest_img3.jpg" alt="">
 				<figcaption>
 					<h3>Watches</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur.</p>
 					<a href="#"></a>
 				</figcaption>
 			</figure>
@@ -140,84 +135,7 @@
 		<div id="owl-demo2" class="owl-carousel owl-theme container">
  
   		
-			<div class="tr_item">
-				<div class="tr_left">
-					<img src="img/images/trending_img.jpg">
-				</div> 
-				<div class="tr_right">
-					<h3>nathan stewart jacket</h3>
-					<p class="tr_right_collection">Summer/Autumn Collection</p>
-					<p>Classic Nathan Stewart Jacket from his latest collection.
-					This item is loved by many just because of it’s simle style.
-					Simple lines,lovely texture,it suits almost everybody. 
-					It comes in six different colors,and all sizes.
-					</p>
-					<p>FASHION TIP:
-					<br/>
-					With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
-					<div class="tr_right_buttons">
-						<a href="#" class="tr_button_sm">M</a>
-						<a href="#" class="tr_button_sm">L</a>
-						<a href="#" class="tr_button_sm">XL</a>
-						<a href="#" class="tr_button_sm">XXL</a>
-						<a href="#" class="tr_button_bg">shop now</a>
-						<a href="#" class="tr_button_bg">size guide</a>
 
-					</div>
-				</div>
-			</div>
-			<div class="tr_item">
-				<div class="tr_left">
-					<img src="img/images/trending_img.jpg">
-				</div> 
-				<div class="tr_right">
-					<h3>nathan stewart jacket</h3>
-					<p class="tr_right_collection">Summer/Autumn Collection</p>
-					<p>Classic Nathan Stewart Jacket from his latest collection.
-					This item is loved by many just because of it’s simle style.
-					Simple lines,lovely texture,it suits almost everybody. 
-					It comes in six different colors,and all sizes.
-					</p>
-					<p>FASHION TIP:
-					<br/>
-					With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
-					<div class="tr_right_buttons">
-						<a href="#" class="tr_button_sm">M</a>
-						<a href="#" class="tr_button_sm">L</a>
-						<a href="#" class="tr_button_sm">XL</a>
-						<a href="#" class="tr_button_sm">XXL</a>
-						<a href="#" class="tr_button_bg">shop now</a>
-						<a href="#" class="tr_button_bg">size guide</a>
-
-					</div>
-				</div>
-			</div>
-			<div class="tr_item">
-				<div class="tr_left">
-					<img src="img/images/trending_img.jpg">
-				</div> 
-				<div class="tr_right">
-					<h3>nathan stewart jacket</h3>
-					<p class="tr_right_collection">Summer/Autumn Collection</p>
-					<p>Classic Nathan Stewart Jacket from his latest collection.
-					This item is loved by many just because of it’s simle style.
-					Simple lines,lovely texture,it suits almost everybody. 
-					It comes in six different colors,and all sizes.
-					</p>
-					<p>FASHION TIP:
-					<br/>
-					With this jacket,Nathan Stewart sunglasses go hand in hand!</p>
-					<div class="tr_right_buttons">
-						<a href="#" class="tr_button_sm">M</a>
-						<a href="#" class="tr_button_sm">L</a>
-						<a href="#" class="tr_button_sm">XL</a>
-						<a href="#" class="tr_button_sm">XXL</a>
-						<a href="#" class="tr_button_bg">shop now</a>
-						<a href="#" class="tr_button_bg">size guide</a>
-
-					</div>
-				</div>
-			</div>
 			<div class="tr_item">
 				<div class="tr_left">
 					<img src="img/images/trending_img.jpg">
@@ -318,7 +236,11 @@
 			 });
  		owl3.owlCarousel({
  			autoPlay: true,
- 			items: 2,
+ 			items:2,
+ 			
+		    itemsDesktop : [1000,2], //5 items between 1000px and 901px
+		    itemsDesktopSmall : [900,2], // betweem 900px and 601px
+		    itemsTablet: [600,1], //2 items between 600 and 0
  			transitionStyle:"fade",
  			stopOnHover : true,
  			navigation: true,

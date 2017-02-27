@@ -52,7 +52,7 @@ box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
 	display: -o-flex;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 
 }
 .nav_flex h1{
@@ -60,7 +60,7 @@ box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
 	margin: 0;
 }
 .main_nav{
-	width: 65%;
+	width: 70%;
 }
 .main_nav ul{
 	display: -webkit-inline-flex;
@@ -91,7 +91,7 @@ ul li a{
 	transition: all 0.5s;
 }
 .active_a{
-	background: #dc0000;
+	background: #b9b8b8;
 	color: #fff;
 	opacity: 0.9;
 
@@ -138,7 +138,7 @@ ul li a{
 
 #owl-demo .owl-pagination{
 	position: absolute;
-	left: 50%;
+	left: calc((100% - 108px)/2);
 	bottom: 70px;
 }
 #owl-demo .owl-page span{
@@ -172,7 +172,7 @@ ul li a{
 	font: 400 3em 'Open Sans';
 }
 .slider_text h2{
-	font: 900 6em 'Lato';
+	font: 900 5.5em 'Lato';
 }
 
 
@@ -383,14 +383,15 @@ ul li a{
 }
 .ls_img_lg:hover figcaption::after{
 	opacity: 0.5;
-	transform: translateY(-166px) rotate(-45deg);
+	transform: rotate(-45deg);
 	transition: all 0.35s;
 	left: 10%;
+	bottom: 50%;
 
 }
 
 .ls_img_lg h3{
-	font: 700 4.5em 'Open Sans';
+	font: 700 4em 'Open Sans';
 	padding-top: 25%;
 	color: #fff;
 	text-transform: uppercase;
@@ -403,7 +404,7 @@ ul li a{
 .trendingitems{
 	background:  url('../img/images/trending_bg.jpg') center/cover no-repeat;
 	width: 100%;
-	height: 918px;
+	min-height: 918px;
 }
 #owl-demo2 .owl-controls{
 	margin-top: 40px;
@@ -501,7 +502,7 @@ ul li a{
 }
 .tr_button_sm{
 	display: block;
-	width: 70px;
+	width: 20%;
 	height: 50px;
 	border-top: 1px solid #333;
 	border-bottom: 1px solid #333;
@@ -519,7 +520,7 @@ ul li a{
 
 .tr_button_bg{
 	display: block;
-	width: 170px;
+	width: 47%;
 	height: 50px;
 	border-top: 1px solid #333;
 	border-bottom: 1px solid #333;
@@ -719,3 +720,54 @@ ul li a{
 		transition: all 0.5s;
 	}
 
+			/* RWD */
+ /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+		.ls_img_lg h3{
+			font-size: 3em;
+		}
+		.tr_item{
+			flex-direction: column;
+			align-items: center;
+		}
+		.tr_left{
+			width: 96%;
+			text-align: center;
+		}
+		.tr_right{
+			width: 60%;
+			text-align: center;
+			padding-bottom: 30px;
+		}
+		.tr_right_buttons{
+			width: 100%;
+		}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+		.slider_text h3:first-child{
+			font-size: 2.5em;
+		}
+		.slider_text h2{
+			font-size: 4em;
+		}
+		.slider_text h3:last-child{
+			font-size: 2.5em;
+		}
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
